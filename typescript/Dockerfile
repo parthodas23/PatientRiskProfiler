@@ -1,6 +1,8 @@
-FROM node:alpine
+FROM node:20-alpine
 WORKDIR /app
 
 COPY ./typescript ./
 RUN npm install
-CMD ["npm", "run", "start"]
+RUN npm install -g tsx
+
+CMD ["tsx", "index.ts"]
