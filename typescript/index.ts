@@ -17,6 +17,7 @@ switch (env) {
     break;
   default:
     allowedHosts.push("localhost");
+    allowedHosts.push("patientriskprofiler-0.onrender.com");
 }
 
 const app = createMcpExpressApp({
